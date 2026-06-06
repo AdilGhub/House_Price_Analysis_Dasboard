@@ -84,7 +84,6 @@ html.Div(children='  - By SK ADIL', style={
 
     dcc.Graph(id='firstgraph1',figure=fig1,style={'width':'50%','display':'inline-block','backgroundColor': colors['background']}),
     dcc.Graph(id='firstgraph3',figure=fig3,style={'width':'50%','display':'inline-block','backgroundColor': colors['background']}),
-    # dcc.Graph(id='firstgraph4',figure=fig4,style={'width':'50%','display':'inline-block','backgroundColor': colors['background']}),
     dcc.Graph(id='firstgraph5',figure=fig5,style={'width':'50%','display':'inline-block','backgroundColor': colors['background']}),
     dcc.Graph(id='firstgraph6',figure=fig6,style={'width':'50%','display':'inline-block','backgroundColor': colors['background']}),
     dcc.Graph(id='firstgraph7',figure=fig7,style={'width':'50%','display':'inline-block','backgroundColor': colors['background']}),
