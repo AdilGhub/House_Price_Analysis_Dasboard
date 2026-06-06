@@ -46,8 +46,6 @@ Bathrooms
 
 fig3=px.bar(df.head(200),x='bathrooms',y='price',color='bathrooms',title='MONEY SPEND ON HOUSES BASED ON BATHROOMS',template='plotly_dark')
 
-# fig4=px.scatter_3d(df.head(200),x='area',y='price',z='stories',color='stories',title="HOUSES SOLD BASED ON FLOORS IN 3D VIEW",template='plotly_dark')
-
 fig5=px.box(df.head(300),y='price',x='furnishingstatus',color='furnishingstatus',title='HOUSES SOLD BASED ON FURNISHING STATUS ',template="plotly_dark")
 
 fig6=px.strip(df.head(500),x='mainroad',y='price',color='mainroad',title="HOUSES SOLD BESIDE MAINROAD ",template='plotly_dark')
@@ -57,8 +55,6 @@ fig7=px.bar(df.head(100),y='parking',x='price',color='parking',template='plotly_
 fig8=px.scatter(df.head(250),x='area',y='price',color="area",title="MONEY SPENT ACCORDING TO AREA OF HOUSES",template='plotly_dark')
 
 fig9=px.bar_polar(df.head(200),r='price',theta='airconditioning',color='airconditioning',title='PEPOLE BUYED HOUSES ACCORDING TO AIR CONDITIONERS AVAILABILITY',template='plotly_dark')
-
-# fig10=px.line_3d(df.head(500),x='area',y='price',z='parking',color='parking',title="MONEY SPENT ON HOUSES BASED ON PARKING AREA IN 3D VIEW",template='plotly_dark')
 
 
 
@@ -87,7 +83,6 @@ html.Div(children='  - By SK ADIL', style={
 ),
 
     dcc.Graph(id='firstgraph1',figure=fig1,style={'width':'50%','display':'inline-block','backgroundColor': colors['background']}),
-    # dcc.Graph(id='firstgraph2',figure=fig2,style={'width':'50%','display':'inline-block','backgroundColor': colors['background']}),
     dcc.Graph(id='firstgraph3',figure=fig3,style={'width':'50%','display':'inline-block','backgroundColor': colors['background']}),
     # dcc.Graph(id='firstgraph4',figure=fig4,style={'width':'50%','display':'inline-block','backgroundColor': colors['background']}),
     dcc.Graph(id='firstgraph5',figure=fig5,style={'width':'50%','display':'inline-block','backgroundColor': colors['background']}),
@@ -95,7 +90,6 @@ html.Div(children='  - By SK ADIL', style={
     dcc.Graph(id='firstgraph7',figure=fig7,style={'width':'50%','display':'inline-block','backgroundColor': colors['background']}),
     dcc.Graph(id='firstgraph8',figure=fig8,style={'width':'50%','display':'inline-block','backgroundColor': colors['background']}),
     dcc.Graph(id='firstgraph9',figure=fig9,style={'width':'50%','display':'inline-block','backgroundColor': colors['background']}),
-    # dcc.Graph(id='firstgraph10',figure=fig10,style={'width':'50%','display':'inline-block','backgroundColor': colors['background']})
 ])
 
 if __name__ == '__main__':
